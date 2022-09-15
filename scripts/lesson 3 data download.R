@@ -27,6 +27,7 @@ if (!require("BiocManager", quietly = TRUE))
 library(BiocManager)
 install.packages("tinytex") 
 library(tinytex)
+remotes::install_github("paleolimbot/rbbt")
 
 library(rdryad)
 library(tidyverse)
