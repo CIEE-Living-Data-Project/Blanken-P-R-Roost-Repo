@@ -25,6 +25,8 @@ install.packages("myTAI", dependencies = TRUE)
 if (!require("BiocManager", quietly = TRUE))
   install.packages("BiocManager")
 library(BiocManager)
+install.packages("tinytex") 
+library(tinytex)
 
 library(rdryad)
 library(tidyverse)
@@ -46,5 +48,4 @@ dir.create("data/github")
 
 gitcreds::gitcreds_set() #PAT
 
-##downloanding from URL?
 
