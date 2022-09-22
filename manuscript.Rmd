@@ -22,6 +22,8 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # References
 
+[@amponsah-mensah2022]
+
 # Tables
 
 # Figure Captions

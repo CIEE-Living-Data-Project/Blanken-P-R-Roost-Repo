@@ -49,4 +49,11 @@ dir.create("data/github")
 
 gitcreds::gitcreds_set() #PAT
 
+boxplot(roostvrandom$Height..m.~roostvrandom$Roost.non.roost,
+        data=roostvrandom,
+        main="Roost Use and Tree Height",
+        xlab="Roost Use",
+        ylab="Tree Height",
+        col="light blue",
+        border="dark green")
 
