@@ -4,7 +4,7 @@ author: "Emma Blanken"
 output: pdf_document
 date: "2022-09-15"
 
-csl: https://raw.githubusercontent.com/citation-style-language/styles/master/ecology-letters.csl
+csl: biotropica.csl
 bibliography: references.bib
 ---
 
@@ -16,13 +16,16 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Introduction
 
+[@amponsah-mensah2022]
+
 # Methods
 
 # Results
 
 # References
 
-[@amponsah-mensah2022]
+::: {#refs}
+:::
 
 # Tables
 
