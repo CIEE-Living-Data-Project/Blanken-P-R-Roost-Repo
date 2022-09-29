@@ -1,0 +1,48 @@
+---
+title: "My Manuscript"
+author: "Emma Blanken"
+output: pdf_document
+date: "2022-09-15"
+
+csl: biotropica.csl
+bibliography: references.bib
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Abstract
+
+This LDP mini project seeks to confirm the findings from [@amponsah-mensah2022], that roosts used by Gambian epauletted fruit bats differ from random potential roosts in the surrounding environment. The characteristics that provide an adequate roost are different from potential roosts in the rest of the environment, and the roosts bats choose reflect this difference. My analysis emphasizes this finding.
+
+[@amponsah-mensah2022]
+
+# Introduction
+
+My master's thesis focuses on the roosting ecology of the little brown myotis. I selected data from Dryad that is similar to my thesis topic and uses similar methods to get experience processing data similar to my own in a reproducible manner. The data I am using, conducted by [@amponsah-mensah2022], considers the roosting ecology of the Gambian epauletted fruit bat. 
+
+Using a simply box-plot code in R that analyses data from [@amponsah-mensah2022], I will create an entirely reproducble project for the LDP Productivity and Reproducibility course. The aim of my mini project is to confirm that roost selection of the Gambian epauletted fruit bat is not random and they exhibit a selection for roosts with certain characteristics. The roost traits I will consider are: tree height, diameter at breast height, and crown diameter.
+
+# Methods
+
+Please see the code I used to analyze three roost variables:
+
+boxplot(roostvrandom$Height..m.~roostvrandom$Roost.non.roost, data=roostvrandom, main="Roost Use and Tree Height", xlab="Roost Use", ylab="Tree Height", col="light blue", border="dark green")
+
+boxplot(roostvrandom$DBH..m.~roostvrandom$Roost.non.roost, data=roostvrandom, main="Roost Use and DBH", xlab="Roost Use", ylab="DBH", col="light blue", border="dark green")
+
+boxplot(roostvrandom$Crown.Diameter.m.~roostvrandom$Roost.non.roost, data=roostvrandom, main="Roost Use and Crown Diameter", xlab="Roost Use", ylab="Crown Diameter", col="light blue", border="dark green")
+
+# Results
+
+My findings confirm that the roosts used by the Gambian epauletted fruit bat differ from random roosts in the environment. There are certain roost characterisitcs such as diameter at breast height, tree height, and circumference that determine whether a roost will be occupied.
+
+# References
+
+::: {#refs}
+:::
+
+# Figures
+Please see figured provided on OSF and Github.
+
